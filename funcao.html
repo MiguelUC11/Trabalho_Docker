@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="./imagens/logo-docker.svg" alt="logo do docker em branco">
+
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <h1>Função do </br><span class="colorido">Docker</span></h1>
+    <section class="funcao-centralizar-gradiente">
+        <section class="gradiente-funcao">
+            <p>A função do Docker é gerar ambiente virtual chamados de containers, afim de criar, distribuir e realizar a execução de aplicações. É basicamente como criar um programa e empacotar junto com todas as ferramentas, bibliotecas importadas e configurações. Isso facilita o desenvolvimento e torna mais versátil o uso dos containers para transportar projetos para outras máquinas.</p>
+        </section>
+    </section>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Como o <span class="colorido">docker</span> realiza esse processo:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section id="gradiente-funcao-lista">
+                <p>Contêineres: Guarda o aplicativo junto com todas as suas dependências para sua funcionalidade em um único espaço.</p>
+                <p>Portabilidade: Guardar em contêineres torna a portabilidade muito mais viável, por permitir que funcione com tudo o que é necessário para a atuação da aplicação.</p>
+                <p>Isolamento: Isola os contêineres, fazendo com que se tornem independentes do sistema operacional da máquina host, evitando problemas na execução.</p>
+                <p>Velocidade: São mais leves que máquinas virtuais (VMs), logo possuem mais velocidade de execução.</p>
+                <p>Padronização: Também torna as etapas de criação, construção, teste e implementação padronizadas, o que acelera o ciclo de produção.</p>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+    <script>
+        const button = document.getElementById('modos');
+
+        button.addEventListener("click", () => {
+            document.body.classList.toggle("modoescuro");
+
+            if (document.bodyclassList.contains("modoescuro")){
+                buttontextContent = 'Modo Claro';
+            } else{
+                buttontextContent = 'Modo Escuro';
+            }
+        })
+    </script>
+</body>
+</html>

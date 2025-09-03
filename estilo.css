@@ -1,0 +1,202 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    max-width: 100vw;
+    color:#FFF;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-header{
+    width: 200px;
+    height: auto;
+    margin:0 0 0 50px;
+}
+.menu-lateral{
+    width: 100px;
+    height: auto;
+    margin: 0 50px 0 0;
+}
+.links-header{
+    width: 30%;
+    font-size: 1.5pc;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #06193d;
+}
+h1{
+    text-align: center;
+    font-size: 6pc;
+}
+.img-menu {
+    width: 100px;
+    height: auto;
+}
+.gradiente-funcao{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1100px;
+    height: 200px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+p{
+    margin: 30px;
+}
+.funcao-centralizar-gradiente{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.colorido{
+    color: #00ffba;
+}
+#gradiente-funcao-lista{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1300px;
+    height: 450px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+#funcao-titulo{
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 1300px;
+    text-align: left;
+}
+#mesclartexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body.modoescuro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #94b9ff;
+    color: #06193d;
+    font-family: League Spartan;
+}
+body.modoescuro #logoheader{
+    filter: invert(1);
+}
+body.modoescuro #menuheader{
+    filter: invert(1);
+}
+body.modoescuro a{
+    color:#00184d;
+}
+.botaomodos{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#00184d, #008a96);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3pc;
+    transition: ease 0.3s;
+}
+nav{
+    background-color: #06193d;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+nav a:hover{
+    background-color: #061993;
+    color: white;
+
+}
+nav li:last-child a{
+    margin-right: auto;
+}
+.barrinha {
+    width: 350px;
+    height: 100vh;
+    background-color: #06193d;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 3px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.barrinha.ativa {
+    transform: translateX(0);
+}
+.barrinha li {
+    width: 100%;
+}
+.barrinha a {
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+footer{
+    background-color:#004466;
+    width: 100%;
+    height: 100%;
+    margin-top: 55px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.redes_socias{
+    width: 35px;
+    height: 35px;
+}
+.imgsfooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+}
+.alinfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.alintextos_footer{
+    text-align: center;
+    margin: 25px;
+}
