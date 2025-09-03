@@ -202,37 +202,6 @@ body.modoescuro a{
     transform: scale(1.03);
 }
 
-.footer-exemplosuso{
-    width: 100vw;
-    height: auto;
-    margin-top: 5%;
-}
-
-.icones-exemplosuso{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixaicones-exemplosuso{
-    width: 20vw;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.iconefooter-exemplosuso{
-    width: 40px;
-    height: auto;
-}
-
-.mensagemfinal-exemplosuso{
-    width: 100vw;
-    height: auto;
-    font-size: 1pc;
-}
-
 nav{
     background-color: #06193d;
 }
@@ -303,4 +272,39 @@ body.modoescuro .barrinha{
     width: 100%;
     padding: 15px 30px;
     box-sizing: border-box;
+}
+
+.footer-exemplosuso{
+    background-color:#004466;
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_socias{
+    width: 35px;
+    height: 35px;
+}
+
+.imgsfooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.alinfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.alintextos_footer{
+    text-align: center;
+    margin: 25px;
 }
