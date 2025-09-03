@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Empresas que usam </title>
+        <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <img class="logo-header" src="./img/logo-docker-convertido-de-png.svg" id="logoheader" alt="logo do docker em branco">
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+        <botton class="botaomodos" id="modos"><span class="iconemodos"> Claro/Escuro</span></botton>
+         <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img class="menu-lateral" src="./img/close.svg" id="menuheader" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img class="menu-lateral" src="./img/menu-removebg-preview-convertido-de-png.svg" id="menuheader" alt="três barrinhas representando o menu"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="titulo-exemplosuso">
+        <p><span class="colorido">Empresas</span> que usam o Docker</p>
+    </section>
+    <section class="premain-exemplosuso">
+        <div class="caixacolorida-exemplosuso"><p> Desde que surgiu, o Docker vem ganhando cada vez mais expressividade. Hoje, ele é usado em praticamente todas as aplicações. Vamos ver algumas empresas mais conhecidas que o utilizam </p></div>    
+    </section>
+    <main class="main-exemplosuso">
+        <section class="banner-exemplosuso" id="fundobanner1-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./img/airbnb.png">
+        <h2 class="corrosa-exemplosuso"> Airbnb: </h2>
+        <p> A Airbnb usa os containers Docker para separar as tarefas empenhadas pelo sistema, garantindo que todas rodem em sistemas igualmente e assim ajam perante os mesmos parâmetros. Eles criaram "Jorbs", um sistema que roda cada tarefa "job" separadamente. O desenvolvedor configura os comandos e dependências que serão utilizados e o jorb cria um container Docker para executar.</p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner2-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./img/google.webp">
+        <h2 class="coramarela-exemplosuso"> Google: </h2>
+        <p> A Google usava containers muito antes do Docker existir, com um sistema próprio chamado Borg. O Borg usava um conceito semelhante a containers para isolar recursos da máquina para cada aplicação e garantir que os serviços pudessem ser executados no mesmo servidor sem interferir um no outro. Com a chegada do Docker, a empresa apoiou a sua utilização pela facilidade de uso da ferramente, podendo expandir mais ainda a tecnologia pelo mundo da computação. </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner3-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./img/netflix-removebg-preview.png">
+        <h2 class="corvermelha-exemplosuso"> Netflix: </h2>
+        <p> A Netflix usa containers por conta da alta demanda do serviço. Com diversos microsserviços e milhões de usuários, cada serviço deve rodar de maneira rápida, escalável e isolada, assim, atualizações são feitas rapidamente, fica simples de adaptar cada serviço ao necessário e erros não afetam toda a aplicação, um container "bugado" não vai derrubar os outros. Para rodar os containers, a Netflix usa o Titus, sua própria plataforma de containers que roda na nuvem da AWS onde ela está hospedada. </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner4-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./img/spotify-removebg-preview.png">
+        <h2 class="corverde-exemplosuso"> Spotify: </h2>
+        <p> O Spotify também usa containers pela alta demanda do serviço, com diversos mcirosserviços e milhões de usuário. Assim, cada serviço roda de maneira isolada e mais eficaz, proporcionando mais eficiência ao funcionamento do aplicativo. Porém, o número de containers ficou tão grande que o Spotify teve que implementar uma ferrmanta própria, o "Tsunami", que fazia atualizações graduais nos containers para evitar que o sistema ficasse sobrecarregado. </p>    
+        </section>
+    </main>
+    <footer class="footer-exemplosuso">
+        <div class="icones-exemplosuso">
+            <div class="caixaicones-exemplosuso"> 
+                <img src="./img/whatzap-removebg-preview.png" class="iconefooter-exemplosuso">
+                <img src="./img/instra1-removebg-preview.png" class="iconefooter-exemplosuso">
+                <img src="./img/email-removebg-preview.png" class="iconefooter-exemplosuso">
+            </div>
+        </div>
+        <div class="mensagemfinal-exemplosuso">
+            <p> O Docker. Definição, função, exemplos, comandos e instalação </p>
+            <p> &copy; 2025 Todos os direitos reservados. </p>
+        </div>
+    </footer>
+
+        <script>
+            const button = document.getElementById('modos');
+
+            button.addEventListener("click", () => {
+                document.body.classList.toggle("modoescuro");
+
+                if (document.bodyclassList.contains("modoescuro")){
+                    buttontextContent = 'Modo Claro';
+                } else{
+                    buttontextContent = 'Modo Escuro';
+                }
+            })
+
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #06193d;
+    color: #fff;
+    font-family: League Spartan;
+}
+
+body.modoescuro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #94b9ff;
+    color: #06193d;
+    font-family: League Spartan;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-header {
+    width: 200px;
+    height: auto;
+    margin:   0 0 0 50px;
+}
+
+body.modoescuro #logoheader{
+    filter: invert(1);
+}
+.menu-lateral {
+    width: 100px;
+    height: auto;
+    margin: 0 50px 0 0;
+}
+
+body.modoescuro #menuheader{
+    filter: invert(1);
+}
+
+.links-header {
+    width: 30%;
+    font-size: 1.5pc;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body.modoescuro a{
+    color:#00184d;
+}
+
+.botaomodos{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3pc;
+    transition: ease 0.3s;
+}
+
+.botaomodos:hover{
+    transform: scale(1.1);
+}
+
+.colorido{
+    color: #00ffba;
+}
+
+.titulo-exemplosuso{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5pc;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.premain-exemplosuso{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.caixacolorida-exemplosuso{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 60vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: center;
+}
+
+.main-exemplosuso{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-exemplosuso{
+    width: 87vw;
+    height: auto;
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    font-size: 1.5pc;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.imgbanner-exemplosuso{
+    width: 150px;
+    height: 140px;
+    margin-right: 3%;
+}
+
+.corrosa-exemplosuso{
+    color: #e17175;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corvermelha-exemplosuso{
+    color: #e50914;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.coramarela-exemplosuso{
+    color: #ff9c1a;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corverde-exemplosuso{
+    color: #1db954;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+#fundobanner1-exemplosuso{
+    background-color: #fe025640;
+    transition: ease 0.3s;
+}
+
+#fundobanner1-exemplosuso:hover{
+    border: 3px solid #e17175;
+    transform: scale(1.03);
+}
+
+#fundobanner2-exemplosuso{
+    background-color: #e2d464d4;
+    transition: ease 0.3s;
+}
+
+#fundobanner2-exemplosuso:hover{
+    border: 3px solid #ff9c1a;
+    transform: scale(1.03);
+}
+
+#fundobanner3-exemplosuso{
+    background-color: #df06116b;
+    transition: ease 0.3s;
+}
+
+#fundobanner3-exemplosuso:hover{
+    border: 3px solid #e50914;
+    transform: scale(1.03);
+}
+
+#fundobanner4-exemplosuso{
+    background-color: #0dea5a5d;
+    transition: ease 0.3s;
+}
+
+#fundobanner4-exemplosuso:hover{
+    border: 3px solid #1db954;
+    transform: scale(1.03);
+}
+
+.footer-exemplosuso{
+    width: 100vw;
+    height: auto;
+    margin-top: 5%;
+}
+
+.icones-exemplosuso{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaicones-exemplosuso{
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconefooter-exemplosuso{
+    width: 40px;
+    height: auto;
+}
+
+.mensagemfinal-exemplosuso{
+    width: 100vw;
+    height: auto;
+    font-size: 1pc;
+}
+
+nav{
+    background-color: #06193d;
+}
+
+body.modoescuro nav{
+    background-color: #94b9ff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+nav li:last-child a{
+    margin-right: auto;
+}
+.barrinha {
+    width: 350px;
+    height: 100vh;
+    background-color: #06193d;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 3px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.barrinha a:hover{
+    background-color: #061993;
+    color: white;
+}
+
+body.modoescuro .barrinha{
+    background-color: #94b9ff;
+}
+
+.barrinha.ativa {
+    transform: translateX(0);
+}
+
+.barrinha li {
+    width: 100%;
+}
+
+.barrinha a {
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
