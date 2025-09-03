@@ -1,0 +1,43 @@
+#conteudo {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#conteudo h1 {
+    font-size: 4pc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#conteudo .descricao {
+    font-size: 1.5pc;
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.secao-lista {
+    margin-bottom: 60px;
+}
+
+.secao-lista .subtitulo {
+    font-size: 3pc;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.secao-lista ul {
+    list-style: disc;
+    padding-left: 30px;
+    font-size: 1.3pc;
+    line-height: 1.8;
+}
+
+.secao-lista li {
+    margin-bottom: 15px;
+}
+
+.secao-lista strong {
+    color: #00ffba;
+}
