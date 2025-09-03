@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Docker</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco">
+
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section id="alin_h1_pghistoria">
+            <h1 id="h1_pghistoria">A História do <br><span class="colorido">Docker:</span></h1>
+        </section>
+        <section id="conteudo_pghistoria">
+            <section class="caixatexto_pghistoria">
+                <p id="paragrafo_pghistoria">O Docker foi fundado pela empresa dotCloud, composta por Solomon Hykes, Kamel Founadi e Sebastien Pahl,
+                tornando-se uma empresa que realizava serviços como Paas, criando ambientações virtuais para a simplificação
+                e melhoria das aplicações de softwares, tornando mais fácil também o uso de ferramentas. O Docker teve como sua
+                base a tecnologia LXC, que foi criada a partir da demanda por máquinas virtuais, que apresentava riscos e dificuldades
+                quanto à aplicação para desenvolvimento. A tecnologia usava instâncias isoladas para aplicações mais fáceis e consistentes,
+                além de torná-la independente, seja qual for o sistema operacional usado.</p>
+
+                <p id="paragrafo_pghistoria">O Docker inicialmente foi apenas um projeto interno da empresa, porém em março de 2013, durante a PyCon o projeto 
+                viria a ser conhecido por outros desenvolvedores. Solomon Hykes expôs a ideia, anunciando também que a plataforma seria
+                open-source, o que permitiu que diversos programadores conseguissem contribuir para a evolução do Docker, até o que 
+                conhecemos, sendo que a tecnologia foi adotada por grandes empresas como o Google, IBM e até mesmo a Microsoft. 
+                No ano de 2014 a 2017, o Docker criou inovações dentro deste âmbito que ainda não haviam sido exploradas,
+                como o uso de imagens imutáveis, que não permitiam mudanças inesperadas ou até mesmo o Dockerfile e Docker Hub, 
+                responsável por armazenar e gerir essas imagens. Essas inovações e a necessidade do serviço atraiu investimentos
+                e permitiu um aperfeiçoamento ainda maior na plataforma.</p>
+
+                <p id="paragrafo_pghistoria">Com tudo isso o Docker acabou gerando uma revolução dos containers,
+                sendo responsável pela padronização do método para implementação em ambientes
+                para testes ou produção. Se tornando essencial nesse papel, mas ainda que o Docker
+                tenha gerado essa revolução, ele não foi responsável pela criação dos containers, apenas
+                por gerar a visibilidade da tecnologia.</p>
+            </section>
+        </section>
+    </main>
+   <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>
