@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais comandos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="./imagens/logo-docker.svg" alt="logo do docker em branco">
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+        <nav>
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <h1>Principais comandos do</br><span class="colorido">Docker</span></h1>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Container:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section class="gradiente-funcao">
+                <p>docker create → cria um container sem iniciá-lo.</p>
+                <p>docker attach → conecta seu terminal ao container em execução.</p>
+                <p>docker kill → força a parada imediata de um container.</p>
+                <p>docker pause → pausa todos os processos dentro do container.</p>
+                <p>docker unpause → retoma os processos pausados.</p>
+                <p>docker top → mostra os processos rodando dentro do container.</p>
+                <p>docker stats → mostra consumo de CPU, memória e rede em tempo real.</p>
+                <p>docker commit → cria uma nova imagem a partir de um container em execução.</p>
+            </section>
+        </section>
+    </div>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Imagens:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section class="gradiente-funcao2">
+                <p>docker history → exibe as camadas de uma imagem.</p>
+                <p>docker tag → cria uma tag para uma imagem existente.</p>
+                <p>docker save -o → exporta uma imagem para um arquivo .tar.</p>
+                <p>docker load -i → importa uma imagem a partir de um arquivo .tar.</p>
+                <p>docker import → cria uma imagem a partir de um sistema de arquivos exportado.</p>
+                <p>docker export → container.tar → exporta o sistema de arquivos de um container para .tar.</p>
+            </section>
+        </section>
+    </div>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Volume:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section class="gradiente-funcao3">
+                <p>docker volume inspect → exibe detalhes de um volume.</p>
+                <p>docker volume prune → remove todos os volumes não usados.</p>
+        </section>
+    </div>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Redes:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section class="gradiente-funcao4">
+                <p>docker network inspect → mostra detalhes de uma rede.</p>
+                <p>docker network disconnect → desconecta um container de uma rede.</p>
+                <p>docker network prune → remove redes não utilizadas.</p>
+        </section>
+    </div>
+    <div id="mesclartexto">
+        <h2 id="funcao-titulo">Gerenciamento do sistema:</h2>
+        <section class="funcao-centralizar-gradiente">
+            <section class="gradiente-funcao5">
+                <p>docker version → mostra a versão do cliente e servidor Docker.</p>
+                <p>docker events → acompanha eventos em tempo real do Docker (criação, start, stop, etc).</p>
+                <p>docker builder prune → limpa dados de builds que não estão em uso.</p>
+                <p>docker login → autentica no Docker Hub (ou outro registry).</p>
+                <p>docker logout → encerra a sessão no registry.</p>
+                <p>docker search → pesquisa imagens no Docker Hub.</p>
+        </section>
+    </div>
+    <script>
+        const button = document.getElementById('modos');
+
+        button.addEventListener("click", () => {
+            document.body.classList.toggle("modoescuro");
+
+            if (document.bodyclassList.contains("modoescuro")){
+                buttontextContent = 'Modo Claro';
+            } else{
+                buttontextContent = 'Modo Escuro';
+            }
+        })
+    </script>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>
