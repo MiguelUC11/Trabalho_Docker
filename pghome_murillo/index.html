@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco">
+
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+
+    <section id="primeira-secao-inicial">
+
+        <section id="textos-primeira-secao">
+            <h1 class="titulo-inicial">
+                Melhore sua <span class="colorido">produtividade</span>
+            </h1>
+            <h2 id="subtitulo-inicial">
+                Uma base para um desenvolvimento seguro e inteligente
+            </h2>
+            <a class="botao-inicial" href="#">Conhecer!</a>
+        </section>
+
+        <img id="imagem-inicial" src="./imagens/baleia-inicial.png" alt="baleia com containers ao redor">
+
+    </section>
+
+
+    <section id="segunda-secao-inicial">
+
+        <h2 class="titulo-inicial">O que é <span class="colorido">Docker?</span></h2>
+        <p id="subtitulo-segunda-secao">Acelere como você <span class="colorido">cria</span>, <br>
+            <span class="colorido">compartilha</span> e
+            <span class="colorido"> executa</span> aplicativos
+        </p>
+
+        <section id="textos-segunda-secao">
+            O Docker ajuda os desenvolvedores a criar, compartilhar, executar e verificar aplicativos em
+            qualquer lugar sem configuração ou gerenciamento de ambiente tedioso
+        </section>
+    </section>
+
+    <section id="terceira-secao-inicial">
+        <section class="texto-terceira-secao">
+            <h2 id="titulo-criador">Criador do <span class="colorido">Docker</span></h2>
+            <p id="texto-criador-terceira-secao">O Docker foi criado em 2013 por Solomon Hykes, um desenvolvedor francês
+                apaixonado
+                por inovação.
+                A ideia nasceu dentro de sua startup dotCloud, com o objetivo de facilitar a forma como
+                aplicações eram entregues e executadas.</p>
+        </section>
+
+        <hr id="barra-criador">
+
+        <section class="texto-terceira-secao">
+            <img id="imagem-criador" src="./imagens/Solomon-Hykes.jpg" alt="Solomon-Hykes">
+            <p id="texto-criador-terceira-secao">“A missão do Docker sempre foi dar mais poder aos
+                desenvolvedores, tornando o software acessível e escalável em qualquer lugar.” <br> –
+                Solomon Hykesv</p>
+        </section>
+
+    </section>
+
+
+
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+
+</html>
